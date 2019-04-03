@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MPLogDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chf-Qj-6lD">
+                                <rect key="frame" x="125" y="545" width="125" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Wl7-GR-tHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Show features">
+                                    <color key="titleColor" red="0.22748966856420902" green="0.30010308159722221" blue="0.075839852109367473" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMm-2D-yqe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MPLog demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9P-NE-rsg">
+                                <rect key="frame" x="99.5" y="77" width="176.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <color key="textColor" red="0.09844358737281883" green="0.13007269965277779" blue="0.032387622344641036" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.098600104923201884" green="0.13007269965277779" blue="0.032871019693068528" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84071272544914311" green="1" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Chf-Qj-6lD" secondAttribute="bottom" constant="62" id="qSb-gl-TW2"/>
+                            <constraint firstItem="Chf-Qj-6lD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhb-Cb-Qyp"/>
+                            <constraint firstItem="j9P-NE-rsg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnS-sS-eJk"/>
+                            <constraint firstItem="j9P-NE-rsg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="xe1-bf-D0Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="yBC-jN-gDl" kind="presentation" identifier="features_segue" id="3AK-Aj-mCa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Features View Controller-->
+        <scene sceneID="kOg-yh-3Gh">
+            <objects>
+                <viewController id="yBC-jN-gDl" customClass="FeaturesViewController" customModule="MPLogDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcU-7w-h6d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MPLog features" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJs-Gh-RZ5">
+                                <rect key="frame" x="80" y="77" width="215" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <color key="textColor" red="0.098443587370000002" green="0.13007269969999999" blue="0.032387622339999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.098600104920000001" green="0.13007269969999999" blue="0.032871019690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OW8-mt-VWH">
+                                <rect key="frame" x="16" y="147" width="343" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Vm3-8W-DFa"/>
+                                </constraints>
+                                <mutableString key="text">Each log message contains filename and line number. This helps very much, especially if coworkers write uninformative log messages.
+
+Each log message contains a thread indicator: "M" = main thread, "a" - "z" are background threads. If there are more than 26 background threads, the extra threads will show "+" as thread indicator. (Threads that do not log are excluded from the counting..)
+
+Date and program name are not shown for each log message. You already know them when you are debugging. They just take up space.</mutableString>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iys-l3-Gtm">
+                                <rect key="frame" x="16" y="20" width="87" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="xAY-j9-NVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="&lt; Go back">
+                                    <color key="titleColor" red="0.2274896686" green="0.30010308159999999" blue="0.075839852109999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPress:" destination="yBC-jN-gDl" eventType="touchUpInside" id="4fn-19-4Lt"/>
+                                    <action selector="onButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjf-2S-Ilc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67533937990788662" green="0.75851779513888884" blue="0.50162503601592257" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OW8-mt-VWH" firstAttribute="leading" secondItem="z8B-NX-Fe6" secondAttribute="leading" constant="16" id="Djn-hF-b0d"/>
+                            <constraint firstItem="iys-l3-Gtm" firstAttribute="leading" secondItem="z8B-NX-Fe6" secondAttribute="leading" constant="16" id="QMf-38-NLu"/>
+                            <constraint firstItem="tJs-Gh-RZ5" firstAttribute="centerX" secondItem="pcU-7w-h6d" secondAttribute="centerX" id="a8s-Wk-9c6"/>
+                            <constraint firstItem="iys-l3-Gtm" firstAttribute="top" secondItem="z8B-NX-Fe6" secondAttribute="top" id="hme-Wb-r7p"/>
+                            <constraint firstItem="z8B-NX-Fe6" firstAttribute="trailing" secondItem="OW8-mt-VWH" secondAttribute="trailing" constant="16" id="qk6-xJ-1aU"/>
+                            <constraint firstItem="tJs-Gh-RZ5" firstAttribute="top" secondItem="z8B-NX-Fe6" secondAttribute="top" constant="57" id="tvd-en-Gtf"/>
+                            <constraint firstItem="OW8-mt-VWH" firstAttribute="top" secondItem="tJs-Gh-RZ5" secondAttribute="bottom" constant="36" id="ty4-fj-rb0"/>
+                            <constraint firstItem="z8B-NX-Fe6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iys-l3-Gtm" secondAttribute="trailing" symbolic="YES" id="wXI-sE-1du"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z8B-NX-Fe6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dym-So-FhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.39999999999998" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
