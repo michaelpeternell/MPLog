@@ -1,6 +1,6 @@
 # Introduction
 
-MPLog is a very lightweight logging framework for Objective C and Swift.
+MPLog is a very lightweight logging framework for Objective C and Swift, written in Objective-C. (If you are looking for a pure Swift version, see my [MPLogSwift](https://github.com/michaelpeternell/MPLogSwift/) library.)
 
 It has less than 200 source lines of code, it is very performant, it has been
 production-tested extensively, but it is still much more useful than `NSLog`
@@ -11,7 +11,8 @@ Compatible (and tested) with:
 - Objective C
 - Swift 3
 - Swift 4
-- iOS 9, iOS 10, iOS 11, iOS 12
+- Swift 5
+- iOS 9, iOS 10, iOS 11, iOS 12, iOS 13
 - macOS 10.6+
 
 # Installation
